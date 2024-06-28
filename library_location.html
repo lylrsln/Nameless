@@ -1,3 +1,12 @@
+<?php
+// Display library location
+session_start();
+if (!isset($_SESSION['userid']) || $_SESSION['role'] !== 'user') {
+    header("Location: index.php");
+    exit();
+}
+$username = $_SESSION['username'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,25 +16,6 @@
 </head>
 <body>
     <h1>Library Location</h1>
-    <p id="library-details">Details about the library location...</p>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            // Simulate user session data
-            const userSession = {
-                isLoggedIn: true,
-                role: 'user',
-                username: 'your_username'
-            };
-
-            // Check user session
-            if (!userSession.isLoggedIn || userSession.role !== 'user') {
-                window.location.href = 'index.html';
-            } else {
-                // Display user-specific information
-                document.getElementById('library-details').innerText = `Welcome, ${userSession.username}. Details about the library location...`;
-            }
-        });
-    </script>
+    <p>Details about the library location...</p>
 </body>
 </html>
