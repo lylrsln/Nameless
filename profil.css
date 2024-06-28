@@ -1,0 +1,30 @@
+.profile-container {
+    width: 50%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile-container .profile-details {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-container .profile-details li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+.profile-container .profile-details li strong {
+    display: inline-block;
+    width: 150px;
+}

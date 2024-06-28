@@ -1,0 +1,96 @@
+/* Add your CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #ffffff; /* Tambahkan background agar lebih kontras */
+}
+
+.wrapper {
+    width: 250px; 
+    height: 350px; 
+    padding: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0.5, 0, 0.5);
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #0693E3, #03517D);
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: none;
+}
+
+.form-container h1, .form-container h3 {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Mulish', sans-serif;
+    color: #fff;
+}
+
+.input-box {
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 13px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #fff; /* Warna putih untuk teks */
+    margin-bottom: 20px;
+    font-size: 10px;
+     /* Jarak antara input box dan checkbox/tautan */
+}
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+}
+
+.remember-forgot input[type="checkbox"] {
+    margin-right: 5px; /* Atur jarak antara checkbox dan teks "Ingat Saya" */
+    transform: translateY(1px); /* Untuk menyesuaikan sedikit posisi vertikal checkbox */
+}
+.remember-forgot a {
+    color: #fff;
+    /* text-decoration: none; */
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #002C61;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.language-selector {
+    text-align: center;
+    margin-top: 15px;
+}
